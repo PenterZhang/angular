@@ -11,6 +11,6 @@ angular.module('controllers').controller('GoodsController',[
   ){
      GoodsService.fetchGoodsList().then(function(data){
        console.log(data);
-       $scope.goodsList = data.data.data;
+       $scope.goodsList = data.data.subjects;
     });
   }])
